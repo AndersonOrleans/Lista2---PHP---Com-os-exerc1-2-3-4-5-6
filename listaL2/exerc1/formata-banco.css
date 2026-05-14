@@ -1,0 +1,174 @@
+/* * seleciona TODOS os elementos da página */
+* {
+  box-sizing: border-box; /* faz padding e border NÃO aumentarem o tamanho total */
+  margin: 0;              /* remove margens padrão do navegador */
+  padding: 0;             /* remove espaçamentos internos padrão */
+}
+
+/* corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* define a fonte */
+  background: #f2f4f8; /* cor de fundo (cinza claro) */
+  color: #222;         /* cor padrão do texto */
+  padding: 30px;       /* espaço interno da página */
+}
+
+/* título principal */
+h1 {
+  text-align: center;  /* centraliza o texto */
+  margin-bottom: 30px; /* espaço abaixo do título */
+  color: #1f2937;      /* cor do texto */
+}
+
+/* formulário */
+form {
+  max-width: 700px;                 /* largura máxima */
+  margin: 0 auto 30px auto;         /* centraliza horizontalmente */
+  background: white;                /* fundo branco */
+  padding: 25px;                   /* espaço interno */
+  border-radius: 12px;             /* bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* sombra */
+}
+
+/* caixa do formulário */
+fieldset {
+  border: 2px solid #2563eb; /* borda azul */
+  border-radius: 10px;       /* arredondamento */
+  padding: 20px;             /* espaço interno */
+}
+
+/* título do fieldset */
+legend {
+  font-weight: bold;  /* negrito */
+  color: #2563eb;     /* cor azul */
+  padding: 0 10px;    /* espaço lateral */
+}
+
+/* textos dos labels */
+label {
+  font-weight: bold; /* deixa em negrito */
+  color: #374151;    /* cor do texto */
+}
+
+/* campos de input */
+input {
+  width: 100%;              /* ocupa toda largura */
+  padding: 10px;            /* espaço interno */
+  margin-top: 6px;          /* espaço acima */
+  border: 1px solid #cbd5e1;/* borda cinza */
+  border-radius: 8px;       /* borda arredondada */
+  font-size: 15px;          /* tamanho do texto */
+}
+
+/* quando clica no input */
+input:focus {
+  outline: none; /* remove borda padrão azul do navegador */
+  border-color: #2563eb; /* borda fica azul */
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); /* brilho azul */
+}
+
+/* div dos botões */
+div {
+  display: flex;        /* coloca os itens lado a lado */
+  gap: 12px;            /* espaço entre botões */
+  flex-wrap: wrap;      /* quebra linha se faltar espaço */
+  margin-top: 20px;     /* espaço acima */
+  justify-content: center; /* centraliza os botões */
+}
+
+/* botões */
+button {
+  flex: 1;                 /* todos ocupam espaço igual */
+  min-width: 220px;        /* largura mínima do botão */
+  padding: 14px 20px;      /* espaço interno */
+  background: #2563eb;     /* cor azul */
+  color: white;            /* texto branco */
+  border: none;            /* remove borda */
+  border-radius: 8px;      /* arredondamento */
+  font-weight: bold;       /* negrito */
+  cursor: pointer;         /* cursor de mão */
+  white-space: nowrap;     /* NÃO quebra o texto */
+  text-align: center;      /* centraliza texto */
+}
+
+/* quando passa o mouse */
+button:hover {
+  background: #1d4ed8; /* azul mais escuro */
+}
+
+/* parágrafos */
+p {
+  max-width: 650px; /* largura máxima */
+  margin: 15px auto; /* centraliza */
+  background: white; /* fundo branco */
+  padding: 15px;     /* espaço interno */
+  border-left: 5px solid #22c55e; /* barra verde na esquerda */
+  border-radius: 8px; /* borda arredondada */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* sombra leve */
+}
+
+/* destaque (span) */
+span {
+  font-weight: bold; /* negrito */
+  color: #2563eb;    /* azul */
+}
+
+/* tabela */
+table {
+  width: 90%;         /* ocupa 90% da tela */
+  max-width: 900px;   /* limite máximo */
+  margin: 30px auto;  /* centraliza */
+  border-collapse: collapse; /* remove espaços entre células */
+  background: white;  /* fundo branco */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* sombra */
+  border-radius: 10px; /* arredondamento */
+  overflow: hidden;   /* mantém borda arredondada */
+}
+
+/* título da tabela */
+caption {
+  padding: 15px;      /* espaço interno */
+  font-size: 18px;    /* tamanho da fonte */
+  font-weight: bold;  /* negrito */
+  color: #1f2937;     /* cor */
+}
+
+/* cabeçalho da tabela */
+th {
+  background: #2563eb; /* azul */
+  color: white;        /* texto branco */
+  padding: 12px;       /* espaço */
+}
+
+/* células da tabela */
+td {
+  padding: 12px;       /* espaço interno */
+  text-align: center;  /* centraliza texto */
+  border-bottom: 1px solid #e5e7eb; /* linha entre linhas */
+}
+
+/* efeito ao passar mouse na linha */
+tr:hover {
+  background: #f1f5f9; /* fundo cinza claro */
+}
+
+/* RESPONSIVO (para celular) */
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px; /* diminui espaço lateral */
+  }
+
+  div {
+    flex-direction: column; /* botões ficam em coluna */
+  }
+
+  button {
+    width: 100%; /* botão ocupa toda largura */
+  }
+
+  table {
+    width: 100%; /* tabela ocupa toda tela */
+    font-size: 14px; /* texto menor */
+  }
+}

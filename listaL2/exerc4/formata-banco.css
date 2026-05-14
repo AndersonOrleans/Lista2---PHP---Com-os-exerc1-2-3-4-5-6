@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #f8fafc);
+  color: #222;
+  padding: 30px;
+}
+
+/* TÍTULO */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+  font-size: 28px;
+}
+
+/* FORM */
+form {
+  max-width: 720px;
+  margin: 0 auto 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* FIELDSET */
+fieldset {
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* LEGEND */
+legend {
+  font-weight: bold;
+  color: #2563eb;
+  padding: 0 12px;
+  font-size: 18px;
+}
+
+/* LABEL */
+label {
+  font-weight: bold;
+  color: #374151;
+  display: block;
+  margin-top: 12px;
+}
+
+/* INPUTS */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.2s;
+  background: #f9fafb;
+}
+
+/* FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+}
+
+/* RADIO */
+input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* BLOCO DE OPÇÕES (CORRIGIDO) */
+.opcoes {
+  max-width: 720px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+}
+
+.opcoes label {
+  display: inline-block;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* PARÁGRAFOS BASE */
+p {
+  max-width: 650px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 18px;
+  border-left: 6px solid #cbd5e1;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+/* SUCESSO */
+p.sucesso {
+  border-left-color: #22c55e;
+  color: #166534;
+  background: #ecfdf5;
+}
+
+/* ERRO */
+p.erro {
+  border-left-color: #dc2626;
+  color: #991b1b;
+  background: #fee2e2;
+  font-weight: bold;
+}
+
+/* SPAN */
+span {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .opcoes {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,231 @@
+/* RESET */
+* {
+  box-sizing: border-box; /* Faz padding e borda entrarem no tamanho total do elemento */
+  margin: 0;              /* Remove margens padrão do navegador */
+  padding: 0;             /* Remove espaçamentos internos padrão do navegador */
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte da página */
+  background: linear-gradient(135deg, #eef2f7, #f8fafc); /* Fundo em degradê claro */
+  color: #222; /* Cor padrão do texto */
+  padding: 30px; /* Espaçamento interno da página */
+}
+
+/* TÍTULO */
+h1 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  color: #1f2937; /* Cor do título */
+  font-size: 28px; /* Tamanho da fonte */
+}
+
+/* FORM */
+form {
+  max-width: 720px; /* Largura máxima do formulário */
+  margin: 0 auto 30px auto; /* Centraliza o formulário e dá espaço embaixo */
+  background: white; /* Fundo branco */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 14px; /* Arredonda as bordas */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* Sombra ao redor */
+}
+
+/* FIELDSET */
+fieldset {
+  border: 2px solid #2563eb; /* Borda azul */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 25px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaço abaixo de cada fieldset */
+}
+
+/* LEGEND */
+legend {
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: #2563eb; /* Cor azul */
+  padding: 0 12px; /* Espaçamento lateral */
+  font-size: 18px; /* Tamanho do texto */
+}
+
+/* LABEL */
+label {
+  font-weight: bold; /* Deixa o label em negrito */
+  color: #374151; /* Cor do texto */
+  display: block; /* Faz o label ocupar uma linha inteira */
+  margin-top: 12px; /* Espaço acima do label */
+}
+
+/* INPUTS */
+input,
+textarea,
+select {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 12px; /* Espaçamento interno */
+  margin-top: 6px; /* Espaço acima do campo */
+  border: 1px solid #cbd5e1; /* Borda cinza clara */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-size: 15px; /* Tamanho da fonte */
+  transition: 0.2s; /* Suaviza mudanças visuais */
+  background: #f9fafb; /* Fundo cinza bem claro */
+}
+
+/* FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Remove contorno padrão do navegador */
+  border-color: #2563eb; /* Borda fica azul ao clicar */
+  background: #fff; /* Fundo branco ao clicar */
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4); /* Brilho azul ao redor */
+}
+
+/* RADIO */
+input[type="radio"] {
+  width: auto; /* Radio não ocupa 100% da largura */
+  margin-right: 8px; /* Espaço entre bolinha e texto */
+  transform: scale(1.2); /* Aumenta um pouco o tamanho do radio */
+}
+
+/* TEXTAREA */
+textarea {
+  height: 120px; /* Altura da área de texto */
+  resize: none; /* Impede redimensionar o textarea */
+}
+
+/* CONTAINER BOTÕES */
+.form-acoes {
+  display: flex; /* Coloca os itens lado a lado */
+  gap: 12px; /* Espaço entre os itens */
+  flex-wrap: wrap; /* Permite quebrar linha se faltar espaço */
+  margin-top: 25px; /* Espaço acima do container */
+  justify-content: center; /* Centraliza os itens */
+}
+
+/* SELECT */
+select {
+  max-width: 300px; /* Limita a largura máxima do select */
+}
+
+/* BUTTON */
+button {
+  flex: 1; /* Permite o botão crescer dentro do flex */
+  min-width: 220px; /* Largura mínima do botão */
+  padding: 14px 20px; /* Espaçamento interno */
+  background: linear-gradient(135deg, #2563eb, #1d4ed8); /* Fundo azul em degradê */
+  color: white; /* Texto branco */
+  border: none; /* Remove borda padrão */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Mostra mãozinha ao passar o mouse */
+  transition: 0.3s; /* Suaviza animações */
+  margin-top: 15px;
+}
+
+/* HOVER */
+button:hover {
+  transform: translateY(-2px); /* Sobe um pouco o botão */
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4); /* Adiciona sombra azul */
+}
+
+/* PARÁGRAFOS BASE */
+p {
+  max-width: 650px; /* Largura máxima da mensagem */
+  margin: 20px auto; /* Centraliza e dá espaço em cima/baixo */
+  background: #ffffff; /* Fundo branco */
+  padding: 18px; /* Espaçamento interno */
+  border-left: 6px solid #cbd5e1; /* Barra lateral cinza */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Sombra leve */
+  font-size: 16px; /* Tamanho do texto */
+}
+
+/* SUCESSO */
+p.sucesso {
+  border-left-color: #22c55e; /* Barra lateral verde */
+  color: #166534; /* Texto verde escuro */
+  background: #ecfdf5; /* Fundo verde bem claro */
+}
+
+/* ERRO */
+p.erro {
+  border-left-color: #dc2626; /* Barra lateral vermelha */
+  color: #991b1b; /* Texto vermelho escuro */
+  background: #fee2e2; /* Fundo vermelho claro */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* SPAN */
+span {
+  font-weight: bold; /* Deixa o span em negrito */
+  color: #2563eb; /* Cor azul */
+}
+
+/* TABELA */
+table {
+  width: 90%; /* Tabela ocupa 90% da tela */
+  max-width: 900px; /* Largura máxima da tabela */
+  margin: 30px auto; /* Centraliza a tabela */
+  border-collapse: collapse; /* Junta as bordas das células */
+  background: white; /* Fundo branco */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* Sombra ao redor */
+  border-radius: 12px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde excesso para manter bordas arredondadas */
+}
+
+/* CAPTION */
+caption {
+  padding: 15px; /* Espaçamento interno */
+  font-size: 20px; /* Tamanho do título da tabela */
+  font-weight: bold; /* Negrito */
+  color: #1f2937; /* Cor do texto */
+}
+
+/* TH */
+th {
+  background: #2563eb; /* Fundo azul do cabeçalho */
+  color: white; /* Texto branco */
+  padding: 14px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho do texto */
+}
+
+/* TD */
+td {
+  padding: 12px; /* Espaçamento interno da célula */
+  text-align: center; /* Centraliza o conteúdo */
+  border-bottom: 1px solid #e5e7eb; /* Linha embaixo da célula */
+}
+
+/* ZEBRA */
+tr:nth-child(even) {
+  background: #f9fafb; /* Cor diferente nas linhas pares */
+}
+
+/* HOVER */
+tr:hover {
+  background: #e0ecff; /* Cor azul clara ao passar o mouse */
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px; /* Diminui o espaçamento em telas pequenas */
+  }
+
+  form {
+    padding: 20px; /* Diminui o espaçamento interno do formulário */
+  }
+
+  .form-acoes {
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+  }
+
+  button {
+    width: 100%; /* Botão ocupa toda a largura */
+  }
+
+  table {
+    width: 100%; /* Tabela ocupa toda a largura */
+    font-size: 14px; /* Diminui a fonte da tabela */
+  }
+}
